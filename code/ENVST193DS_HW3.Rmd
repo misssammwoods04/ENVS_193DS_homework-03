@@ -3,3 +3,15 @@ title: "ENVST193DS_HW3"
 output: html_document
 ---
 
+https://github.com/misssammwoods04/ENVS_193DS_homework-03.git
+
+```{r}
+
+library(tidyverse)
+library(here)
+library(flextable)
+library(janitor)
+library(readxl)
+
+```
+
