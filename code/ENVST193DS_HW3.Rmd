@@ -15,3 +15,14 @@ library(readxl)
 
 ```
 
+```{r}
+persona_data <- read.csv("~/Desktop/ENVS-193DS/HW 3/data/ENVS-195DS Personal Data - Sheet1.csv")
+```
+
+# Problem 1
+
+## a.         
+
+For each number of assignments I have (0-5), I can find the average rate at which I leave campus based on how many times I have left campus for a certain number of assignments. This comparison would be informative because I believe that my stress level increases with the number of assignments I have, so I think I would be more likely to leave campus on the days that my stress os high. 
+
+
