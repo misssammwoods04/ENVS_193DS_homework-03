@@ -33,22 +33,25 @@ For each number of assignments I have (0-5), I can find the rate at which I leav
 
 ```{r}
 
-ggplot(clean_p_data, aes(x = x_hw_to_do, y = leave_iv_campus_home)) +
+ggplot(clean_p_data, aes(x = x_hw_to_do, y = leave_iv_campus_home, color = x_hw_to_do)) +
   geom_jitter(height = 0.05, 
               width = 0.2, 
               alpha = 0.4, 
-              color = "purple",
               size = 7,
-              pch = 1,
+              pch = 20,
               stroke = 1.5) +
   labs(
     title = " Leaving School vs. Assignments",
     x = "Number of Assignments",
     y = "Did I Leave School? (1 = Yes, 0 = No)"
   ) +
+  scale_color_gradient(low = "lightgreen", high = "darkblue") +
   theme_minimal()
           
 ```
 
+## c. 
+
+Data collected from a personal project exploring the question: 'Do I tend to leave school/Isla Vista/home more often when I feel stressed?' Each point represents a daily observation, plotting the number of assignments (as a representation of stress) against whether I left campus/home (1 = Yes, 0 = No). Point colors indicate the number of assignments on that day, ranging from 0 to 5.
 
 
