@@ -13,16 +13,42 @@ library(flextable)
 library(janitor)
 library(readxl)
 
+p_data <- read.csv("PersonalData.csv")
+
 ```
 
-```{r}
-persona_data <- read.csv("~/Desktop/ENVS-193DS/HW 3/data/ENVS-195DS Personal Data - Sheet1.csv")
-```
 
 # Problem 1
 
 ## a.         
 
-For each number of assignments I have (0-5), I can find the average rate at which I leave campus based on how many times I have left campus for a certain number of assignments. This comparison would be informative because I believe that my stress level increases with the number of assignments I have, so I think I would be more likely to leave campus on the days that my stress os high. 
+For each number of assignments I have (0-5), I can find the rate at which I leave campus based on how many times I have left campus for a certain number of assignments. This comparison would be informative because I believe that my stress level increases with the number of assignments I have, and I believe that I would be more likely to leave campus on the days that my stress is high. 
+
+## b.
+```{r}
+ clean_p_data <- p_data |> 
+  clean_names()
+```
+
+
+```{r}
+
+ggplot(clean_p_data, aes(x = x_hw_to_do, y = leave_iv_campus_home)) +
+  geom_jitter(height = 0.05, 
+              width = 0.2, 
+              alpha = 0.4, 
+              color = "purple",
+              size = 7,
+              pch = 1,
+              stroke = 1.5) +
+  labs(
+    title = " Leaving School vs. Assignments",
+    x = "Number of Assignments",
+    y = "Did I Leave School? (1 = Yes, 0 = No)"
+  ) +
+  theme_minimal()
+          
+```
+
 
 
