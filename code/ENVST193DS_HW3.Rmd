@@ -12,6 +12,7 @@ library(here)
 library(flextable)
 library(janitor)
 library(readxl)
+library(dplyr)
 
 p_data <- read.csv("PersonalData.csv")
 
@@ -26,32 +27,57 @@ For each number of assignments I have (0-5), I can find the rate at which I leav
 
 ## b.
 ```{r}
- clean_p_data <- p_data |> 
-  clean_names()
+ clean_p_data <- p_data |> # new data frame
+  clean_names() |> # clean data, easier to work with 
+  select(leave_iv_campus_home, x_hw_to_do, stress_level) # only include this data
 ```
 
 
 ```{r}
+p_summary <- clean_p_data |> # new data frame
+  group_by(x_hw_to_do) |> #groups data by number of assignments
+  summarize( 
+    observations = n(),  # number of observations for each assignment count
+    days_left = sum(leave_iv_campus_home == "Yes"),  # total times I left
+    leave_rate = mean(leave_iv_campus_home == "Yes")  # proportion of days I left
+  ) 
 
-ggplot(clean_p_data, aes(x = x_hw_to_do, y = leave_iv_campus_home, color = x_hw_to_do)) +
-  geom_jitter(height = 0.05, 
-              width = 0.2, 
-              alpha = 0.4, 
-              size = 7,
-              pch = 20,
-              stroke = 1.5) +
+
+ggplot(p_summary, aes(x = factor(x_hw_to_do), y = leave_rate, fill = leave_rate)) + # data frame, set x and y axis, color based on leave_rate
+  geom_col(width = 0.7) + # creates bars, makes more space between bars
+  scale_fill_gradient(low = "lightgreen", high = "darkblue") + # choose gradient colors
   labs(
-    title = " Leaving School vs. Assignments",
-    x = "Number of Assignments",
-    y = "Did I Leave School? (1 = Yes, 0 = No)"
+    title = "Rate of Leaving Campus by Number of Assignments",# change title
+    x = "Number of Assignments", # change name of x axis
+    y = "Proportion of Days Left Campus", # change name of y axis
+    fill = "Leave Rate" # show that columns are colored based on leave rate
   ) +
-  scale_color_gradient(low = "lightgreen", high = "darkblue") +
-  theme_minimal()
-          
+  theme_minimal() # change theme
 ```
+
 
 ## c. 
 
-Data collected from a personal project exploring the question: 'Do I tend to leave school/Isla Vista/home more often when I feel stressed?' Each point represents a daily observation, plotting the number of assignments (as a representation of stress) against whether I left campus/home (1 = Yes, 0 = No). Point colors indicate the number of assignments on that day, ranging from 0 to 5.
+Data from a personal project exploring the question: "Do I tend to leave school/Isla Vista/home more often when I feel stressed?" Each bar represents the number of days I left campus, grouped by how many assignments I had that day (0-5) . Bar colors indicate the proportion of days I left campus for each assignment count — darker shades reflect higher leave rates.
+
+
+
+## d. 
+
+```{r}
+
+p_summary |> # data frame
+  select (x_hw_to_do, Yes_only, leave_rate) |> # keep only this data
+  flextable() |> # activate flextable
+  set_header_labels( # change header names
+    x_hw_to_do = "Homework To Do", # change header to "Homework To Do"
+    Yes_only = "Days I Left Campus", # change title to "Days I Left Campus"
+    leave_rate = "Leave Rate" # change title to "Leave Rate"
+  ) |> 
+  theme_vanilla() # change theme
+
+
+```
+
 
 
