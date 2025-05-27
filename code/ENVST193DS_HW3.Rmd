@@ -1,5 +1,7 @@
 ---
 title: "ENVST193DS_HW3"
+author: Sam Woods
+Date: 2025-05/28
 output: html_document
 ---
 
@@ -95,11 +97,24 @@ I plan to represent my data as a metaphorical road map that starts at myself and
 
 ## d. 
 
-My data visualization maps my physical movement in relation to stress levels, social plans, assignments, and modes of travel. I was inspired by the road map style of The Game of Life, and used  used Procreate to create symbolic representations instead of words to focus on visual storytelling.
+My data visualization maps my physical movement in relation to stress levels, social plans, assignments, and modes of travel. I was inspired by the road map style of The Game of Life, and used Procreate to create symbolic representations instead of words to focus on visual storytelling.
 
 
+# Problem 3
 
+## a. 
 
+A logistic regression was used in this study. The response variable is willingness to pay for tree planting and maintenance. The predictor variables are age, gender, faculty, university, climate change awareness, and education level.
 
+## b.
 
+This table very clearly represents the data underlying tests considering that the willingness to pay, predictors, partial regression coefficients, standard error, Wald statistic, p-value, and the odds ratio are all boldly labeled and organized in rows. 
+
+## c.
+
+The authors handled visual clutter quite well by including bold text to separate each row of data. The abundance of numbers if overwhelming at first glance but becomes more manageable considering that the data is separated into three columns based on willingness to pay. This separation is indicated by two horizontal lines which helps to make the data more appealing. 
+
+## d.
+
+To improve the table, I would create separate headings for each scenario to clearly distinguish the three sets of data. This would make the information easier to read and interpret by breaking it into more manageable sections. I also believe that color-coding each section would help visually separate the three data sets to make the table to interpret. Without color-coding it seems like one large continuous piece of data, so I think adding color would help highlight the difference between each scenario. 
 
