@@ -11,6 +11,8 @@ This repo belongs to Sam Woods and I am the only person contributing to it.
 
 ## Packages
 
+```
+
 library(tidyverse) # general use
 library(here) # file organization
 library(janitor) # cleaning data frames
@@ -18,8 +20,11 @@ library(readxl) # reading excel files
 library(flextable) # creates tables
 library(dplyr) # data manipulation 
 
+```
+
 ## Data File Information 
 
+```
 .
 ├── ENVS_193DS_homework-03.Rproj
 ├── README.md
@@ -31,5 +36,7 @@ library(dplyr) # data manipulation
 └── data                                     # data folder
     ├── PersonalData.csv
     └── Students’ Willingness to Plant Trees-Linear regression table.htm
+
+```
 
     
