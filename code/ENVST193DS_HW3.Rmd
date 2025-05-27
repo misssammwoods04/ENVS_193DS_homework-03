@@ -67,17 +67,39 @@ Data from a personal project exploring the question: "Do I tend to leave school/
 ```{r}
 
 p_summary |> # data frame
-  select (x_hw_to_do, Yes_only, leave_rate) |> # keep only this data
+  select (x_hw_to_do, days_left, leave_rate) |> # keep only this data
   flextable() |> # activate flextable
   set_header_labels( # change header names
     x_hw_to_do = "Homework To Do", # change header to "Homework To Do"
-    Yes_only = "Days I Left Campus", # change title to "Days I Left Campus"
+    days_left = "Days I Left Campus", # change title to "Days I Left Campus"
     leave_rate = "Leave Rate" # change title to "Leave Rate"
   ) |> 
   theme_vanilla() # change theme
 
 
 ```
+
+
+# Problem 2
+
+## a.
+
+I plan to represent my data as a metaphorical road map that starts at myself and branches toward various destinations. Each road represents a day and branches off toward a destination, while the days I stay home will be represented by a home icon. I will color each road to represent my stress level. The windiness of each road will reflect the number of assignments I had (the more assignments, the more winding the road is). At the end of each road, I’ll place icons representing where I went (store, restaurant, work) to give a visual sense of my destination. 
+
+
+## b.
+
+
+## c.
+
+
+## d. 
+
+My data visualization maps my physical movement in relation to stress levels, social plans, assignments, and modes of travel. I was inspired by the road map style of The Game of Life, and used  used Procreate to create symbolic representations instead of words to focus on visual storytelling.
+
+
+
+
 
 
 
