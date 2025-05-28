@@ -16,7 +16,7 @@ library(janitor)
 library(readxl)
 library(dplyr)
 
-p_data <- read.csv("PersonalData.csv")
+p_data <- read.csv(here("Data", "PersonalData.csv"))
 
 ```
 
@@ -91,7 +91,7 @@ I plan to represent my data as a metaphorical road map that starts at myself and
 
 ## b.
 
-<embed src="/Users/samwoods/Desktop/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/Stress Scale.pdf" type="application/pdf" width="600" height="500">
+<img src="code/Sketch.jpg" alt = "Stress Map Sketch">
 
 
 Affective Visualization Sketch
@@ -99,11 +99,11 @@ Affective Visualization Sketch
 
 ## c.
 
-<embed src="/Users/samwoods/Desktop/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/StressMaps.pdf" type="application/pdf" width="600" height="500">
+<img src="code/StressMaps.png" alt = "Stress Map Draft">
 
 Affective Visualization Draft
 
-<embed src="/Users/samwoods/Desktop/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/Stress Scale.pdf" type="application/pdf" width="600" height="500">
+<img src="code/StressScale.png" alt = "Stress Scale">
 
 Stress Scale 
 
