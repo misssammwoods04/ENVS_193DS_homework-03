@@ -91,11 +91,21 @@ I plan to represent my data as a metaphorical road map that starts at myself and
 
 ## b.
 
-<image src = "/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/StressMapsSketch.pdf" alt = "Stress Map Sketch">
+<embed src="/Users/samwoods/Desktop/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/Stress Scale.pdf" type="application/pdf" width="600" height="500">
+
+
+Affective Visualization Sketch
+
 
 ## c.
 
-<image src = "/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/StressMaps.pdf" alt = "Stress Map Draft">
+<embed src="/Users/samwoods/Desktop/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/StressMaps.pdf" type="application/pdf" width="600" height="500">
+
+Affective Visualization Draft
+
+<embed src="/Users/samwoods/Desktop/ENVS-193DS/GitHub/ENVS_193DS_homework-03/code/Stress Scale.pdf" type="application/pdf" width="600" height="500">
+
+Stress Scale 
 
 ## d. 
 
