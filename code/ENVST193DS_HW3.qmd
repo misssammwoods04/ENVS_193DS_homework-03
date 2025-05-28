@@ -11,7 +11,7 @@ smooth_scroll: false
 
 https://github.com/misssammwoods04/ENVS_193DS_homework-03.git
 
-#Set Up
+# Set Up
 
 ```{r}
 
@@ -101,6 +101,8 @@ I plan to represent my data as a metaphorical road map that starts at myself and
 Affective Visualization Sketch
 
 
+
+
 ## c.
 
 ![](StressMaps.png)
@@ -110,6 +112,9 @@ Affective Visualization Draft
 ![](StressScale.png)
 
 Stress Scale 
+
+
+
 
 ## d. 
 
