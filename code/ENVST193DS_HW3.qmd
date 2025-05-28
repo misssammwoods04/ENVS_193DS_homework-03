@@ -4,6 +4,9 @@ author: Sam Woods
 date: 2025-05-27
 format: html
 toc: true
+toc_float: true
+collapsed: false
+smooth_scroll: false 
 ---
 
 https://github.com/misssammwoods04/ENVS_193DS_homework-03.git
