@@ -92,17 +92,16 @@ I plan to represent my data as a metaphorical road map that starts at myself and
 ## b.
 
 ![](Sketch.jpg)
-
 Affective Visualization Sketch
 
 
 ## c.
 
-<img src="code/StressMaps.png" alt = "Stress Map Draft">
+![](StressMaps.png)
 
 Affective Visualization Draft
 
-<img src="code/StressScale.png" alt = "Stress Scale">
+![](StressScale.png)
 
 Stress Scale 
 
