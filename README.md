@@ -39,4 +39,8 @@ library(dplyr) # data manipulation
 
 ```
 
-    
+# Rendered Output
+
+My rendered doc:
+
+[here](https://misssammwoods04.github.io/ENVS_193DS_homework-03/code/ENVST193DS_HW3.html)
