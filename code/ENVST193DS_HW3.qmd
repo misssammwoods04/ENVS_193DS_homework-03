@@ -97,6 +97,7 @@ I plan to represent my data as a metaphorical road map that starts at myself and
 
 ## b.
 
+
 ![](Sketch.jpg)
 Affective Visualization Sketch
 
@@ -105,12 +106,14 @@ Affective Visualization Sketch
 
 ## c.
 
-![](StressMaps.png)
 
+![](StressMaps.png)
 Affective Visualization Draft
 
-![](StressScale.png)
 
+
+
+![](StressScale.png)
 Stress Scale 
 
 
@@ -119,6 +122,7 @@ Stress Scale
 ## d. 
 
 My data visualization maps my physical movement in relation to stress levels, social plans, assignments, and modes of travel. I was inspired by the road map style of The Game of Life, and used Procreate to create symbolic representations instead of words to focus on visual storytelling.
+
 
 
 # Problem 3
